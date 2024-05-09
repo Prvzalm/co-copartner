@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { logo } from '../../assets';
+import style from '../../style';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`flex justify-between items-center text-white p-4 fixed transition-all duration-300 ${scrolled ? 'top-0' : 'top-8'} left-0 w-full z-50 px-[7.5rem] ${scrolled ? 'bg-transparent' : ''}`}>
+    <nav className={`flex justify-between items-center text-white p-4 fixed transition-all duration-300 ${scrolled ? `top-0 ${style.transparentNavbar}` : `top-8 ${style.scrolledNavbar}`} left-0 w-full z-50 px-[7.5rem] ${scrolled ? 'bg-transparent' : ''}`}>
       <div className="font-bold">
         <img className='w-36' src={logo} alt="" />
       </div>

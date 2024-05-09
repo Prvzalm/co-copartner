@@ -14,3 +14,9 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+.freeTrial-bg {
+    background-image: url("./assets/freeTrialBg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

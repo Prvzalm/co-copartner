@@ -10,6 +10,7 @@ import Review from "../Review/Review";
 import { banner } from "../../assets";
 import Suggestion from "../Suggestion/Suggestion";
 import Footer from "../Footer/Footer";
+import FreeTrial from "../FreeTrial/FreeTrial";
 
 const Main = () => {
   return (
@@ -38,7 +39,7 @@ const Main = () => {
             <Review />
           </div>
           <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
-            <img src={banner} alt="" />
+            <FreeTrial />
           </div>
           <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
             <Suggestion />
