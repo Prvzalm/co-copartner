@@ -13,7 +13,7 @@ const FreeTrial = () => {
           </p>
           <div>
             <input
-              className="rounded-full px-6 py-3 bg-[#ffffff47] text-gray-800 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-white focus:border-transparent mr-6 w-1/2"
+              className="rounded-full px-6 py-3 bg-[#ffffff47] text-gray-800 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-white focus:border-transparent mr-6 w-1/2"
               type="text"
               placeholder="Your email here..."
             />
