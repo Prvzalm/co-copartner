@@ -7,12 +7,12 @@ const Feature3 = () => {
       <button className="px-12 py-4 bg-[#00ACFF1A] text-[#00ACFF] rounded-full mx-auto font-bold my-8">
         How it Works
       </button>
-      <h1 className="text-4xl text-center font-bold md:mx-96 md:my-8">
-        Powerful features to boost your productivity
+      <h1 className="text-4xl text-center font-bold md:my-8">
+        Powerful features to boost <br /> your productivity
       </h1>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-16">
-        <div className="flex-1">
-          <h1 className="text-4xl font-semibold mb-8">
+      <div className="flex flex-col md:flex-row items-center justify-center md:gap-16 gap-4">
+        <div className="flex-1 md:p-0 p-8 text-center">
+          <h1 className="md:text-4xl text-3xl font-semibold mb-8">
             Get your own society application!
           </h1>
           <p className="text-[#5F6D7E] mb-8">

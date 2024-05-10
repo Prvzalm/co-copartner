@@ -3,8 +3,8 @@ import { boxImg, midSectionImg } from "../../assets";
 
 const Builder = () => {
   return (
-    <div className="w-screen flex">
-      <div className="w-1/2 flex flex-col z-10 bg-[#F1F1F1] rounded-3xl p-12">
+    <div className="flex flex-col md:flex-row w-screen">
+      <div className="flex flex-col bg-[#F1F1F1] rounded-3xl p-12 z-10 w-full md:w-1/2">
         <div className="mb-0 mt-auto">
           <h1 className="font-bold text-4xl mb-4">
             Powerful and easy to use Zestify.ai builder platform
@@ -32,9 +32,9 @@ const Builder = () => {
         </div>
       </div>
 
-      <div className="w-2/3 z-20">
+      <div className="w-full md:w-2/3 z-20">
         <img
-          className="w-full max-w-[870px] ml-auto"
+          className="w-full max-w-[870px] ml-auto md:mt-0 mt-8 md:mb-0 mb-8"
           src={midSectionImg}
           alt=""
         />

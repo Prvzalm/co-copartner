@@ -20,3 +20,13 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+@media (max-width: 768px) {
+    .testimonial-bg {
+        background-size: auto 50%;
+    }
+
+    .freeTrial-bg {
+        background-size: 100% 100%;
+    }
+}

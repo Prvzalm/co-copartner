@@ -7,7 +7,6 @@ import Builder from "../Builder/Builder";
 import Feature2 from "../Feature2/Feature2";
 import Feature3 from "../Feature3/Feature3";
 import Review from "../Review/Review";
-import { banner } from "../../assets";
 import Suggestion from "../Suggestion/Suggestion";
 import Footer from "../Footer/Footer";
 import FreeTrial from "../FreeTrial/FreeTrial";
@@ -20,7 +19,7 @@ const Main = () => {
           <div className={`md:mt-[5rem] mt-[2rem] ${styles.boxWidth}`}>
             <Navbar />
           </div>
-          <div className={`md:mt-[14rem] mt-[2rem] ${styles.boxWidth}`}>
+          <div className={`md:mt-[14rem] mt-[6rem] ${styles.boxWidth}`}>
             <Hero />
           </div>
           <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>

@@ -20,6 +20,7 @@ import article3 from "./Rectangle 1-2.png";
 import user1 from "./Avatar.png";
 import user2 from "./Avatar-1.png";
 import user3 from "./Avatar-2.png";
+import close from "./close.png";
 
 export {
   homeImg,
@@ -44,4 +45,5 @@ export {
   user1,
   user2,
   user3,
+  close,
 };
