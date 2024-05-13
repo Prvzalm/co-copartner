@@ -21,6 +21,8 @@ import user1 from "./Avatar.png";
 import user2 from "./Avatar-1.png";
 import user3 from "./Avatar-2.png";
 import close from "./close.png";
+import builderBg from "./builderBg.png";
+import zestifyImg from "./zestifyImg2.png";
 
 export {
   homeImg,
@@ -46,4 +48,6 @@ export {
   user2,
   user3,
   close,
+  builderBg,
+  zestifyImg
 };

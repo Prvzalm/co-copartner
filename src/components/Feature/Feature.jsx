@@ -17,25 +17,22 @@ const Feature = () => {
           <img className="w-48 md:w-[22rem]" src={icon1} alt="" />
           <div className="flex flex-col text-center">
             <h1 className="font-bold text-xl md:text-3xl">Secured Platform</h1>
-            <p className="text-[#797979] text-base md:text-xl my-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+            <p className="text-[#797979] text-xs md:text-xl md:my-5 my-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
           </div>
-          <button className="font-bold group-hover:text-[#00ACFF] group-hover:underline">Learn More</button>
         </div>
         <div className="group flex flex-col hover:bg-[#F9F9F9] md:p-8 p-4 rounded-3xl hover:scale-105 transition duration-300 items-center">
           <img className="w-48 md:w-80" src={icon2} alt="" />
           <div className="flex flex-col text-center">
             <h1 className="font-bold text-xl md:text-3xl">Advanced Analytics</h1>
-            <p className="text-[#797979] text-base md:text-xl my-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+            <p className="text-[#797979] text-xs md:text-xl md:my-5 my-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
           </div>
-          <button className="font-bold group-hover:text-[#00ACFF] group-hover:underline">Learn More</button>
         </div>
         <div className="group flex flex-col hover:bg-[#F9F9F9] md:p-8 p-4 rounded-3xl hover:scale-105 transition duration-300 items-center">
           <img className="w-48 md:w-96" src={icon3} alt="" />
           <div className="flex flex-col text-center">
             <h1 className="font-bold text-xl md:text-3xl">Powerful Automation</h1>
-            <p className="text-[#797979] text-base md:text-xl my-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+            <p className="text-[#797979] text-xs md:text-xl md:my-5 my-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
           </div>
-          <button className="font-bold group-hover:text-[#00ACFF] group-hover:underline">Learn More</button>
         </div>
       </div>
     </div>

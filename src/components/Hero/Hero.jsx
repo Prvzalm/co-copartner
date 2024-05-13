@@ -13,11 +13,11 @@ const Hero = () => {
             Lorem ipsum dolor sit amet consectetur adipiscing elit interdum
             ullamcorper sed pharetra sene.
           </p>
-          <div className="flex flex-col md:flex-row gap-4">
-            <button className="px-12 py-2 bg-[#00ACFF] text-white rounded-full w-full md:w-auto">
+          <div className="flex flex-row md:gap-4 gap-2">
+            <button className="md:px-12 px-6 py-2 bg-[#00ACFF] text-white text-xs md:text-base rounded-full md:w-auto">
               Get Started
             </button>
-            <button className="px-6 py-2 bg-[#F4F4F4] rounded-full flex gap-2 items-center justify-center w-full md:w-auto">
+            <button className="md:px-6 px-4 py-2 bg-[#F4F4F4] rounded-full flex gap-2 text-xs md:text-base items-center justify-center md:w-auto">
               Watch Video <img className="w-6 md:w-12" src={video} alt="" />
             </button>
           </div>

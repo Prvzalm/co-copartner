@@ -27,8 +27,8 @@ const Navbar = () => {
     <nav
       className={`flex justify-between items-center text-white p-4 fixed transition-all duration-300 ${
         scrolled
-          ? `top-0 ${style.transparentNavbar}`
-          : `md:top-8 top-4 ${style.scrolledNavbar}`
+          ? `top-0 bg-[#18181B] bg-opacity-40`
+          : `md:top-4 top-2 ${style.scrolledNavbar}`
       } left-0 w-full z-50 md:px-[7.5rem] ${scrolled ? "bg-transparent" : ""}`}
     >
       <div className="font-bold">
@@ -44,7 +44,7 @@ const Navbar = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="currentColor"
+            stroke="black"
             className="w-6 h-6"
           >
             <path
@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
       <ul
         className={`hidden md:flex space-x-24 px-20 py-4 rounded-full ${
-          scrolled ? "bg-[black] bg-opacity-60" : "bg-[#c1c1c1] bg-opacity-10"
+          "text-white"
         }`}
       >
         <li>Home</li>
@@ -68,7 +68,7 @@ const Navbar = () => {
       </ul>
       {isMobileMenuOpen && (
         <ul
-          className={`flex h-screen flex-col items-center fixed inset-0 bg-black bg-opacity-75 z-50 pt-20 md:hidden`}
+          className={`flex h-screen flex-col items-center fixed inset-0 bg-black bg-opacity-85 z-50 pt-20 md:hidden`}
         >
           <li className="absolute top-5 right-5">
             <button

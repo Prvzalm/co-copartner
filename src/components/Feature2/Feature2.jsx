@@ -1,5 +1,5 @@
 import React from 'react';
-import { zestify } from '../../assets';
+import { zestify, zestifyImg } from '../../assets';
 
 const Feature2 = () => {
   return (
@@ -8,15 +8,13 @@ const Feature2 = () => {
         <button className="px-8 py-4 bg-[#00ACFF1A] text-[#00ACFF] rounded-full font-bold md:my-6">
           How it Works
         </button>
-        <h1 className="text-4xl font-bold md:block hidden my-6">
+        <h1 className="text-2xl md:text-4xl font-bold my-6">
           Powerful features to boost <br /> your productivity
-        </h1>
-        <h1 className="text-4xl font-bold md:hidden my-6">
-          Powerful features to boost your productivity
         </h1>
       </div>
       <div className="w-full">
-        <img className="w-full" src={zestify} alt="" />
+        <img className="w-full md:block hidden" src={zestify} alt="" />
+        <img className="md:hidden w-60 mx-auto" src={zestifyImg} alt="" />
       </div>
     </div>
   );
