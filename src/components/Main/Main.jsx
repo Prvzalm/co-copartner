@@ -15,17 +15,17 @@ const Main = () => {
   return (
     <div className={`flex flex-col ${styles.boxWidth} md:px-[7rem] px-2 hero-bg`}>
       <div className="flex flex-col md:gap-[2rem] gap-[1rem]">
-        <div className="bg-[#06030E]s">
+        <div id="hero">
           <div className={`md:mt-[5rem] mt-[2rem] ${styles.boxWidth}`}>
             <Navbar />
           </div>
           <div className={`md:mt-[14rem] mt-[6rem] ${styles.boxWidth}`}>
             <Hero />
           </div>
-          <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
+          <div id="feature" className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
             <Feature />
           </div>
-          <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
+          <div id="builder" className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
             <Builder />
           </div>
           <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
@@ -40,7 +40,7 @@ const Main = () => {
           <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
             <FreeTrial />
           </div>
-          <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
+          <div id="blog" className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>
             <Suggestion />
           </div>
           <div className={`md:mt-[6rem] mt-[2rem] ${styles.boxWidth}`}>

@@ -23,16 +23,23 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav
-      className={`flex justify-between items-center text-white p-4 fixed transition-all duration-300 ${
+      className={`flex justify-between items-center text-white p-3 fixed transition-all duration-300 ${
         scrolled
-          ? `top-0 bg-[#18181B] bg-opacity-40`
+          ? `top-0 bg-[#18181B] bg-opacity-50`
           : `md:top-4 top-2 ${style.scrolledNavbar}`
-      } left-0 w-full z-50 md:px-[7.5rem] ${scrolled ? "bg-transparent" : ""}`}
+      } left-0 w-full z-50 md:px-[7.5rem]`}
     >
       <div className="font-bold">
-        <img className="w-36" src={logo} alt="" />
+        <button className="flex items-center" onClick={() => scrollToSection("hero")}><img className="w-36" src={logo} alt="" /></button>
       </div>
       <div className="md:hidden">
         <button
@@ -61,14 +68,14 @@ const Navbar = () => {
           "text-white"
         }`}
       >
-        <li>Home</li>
-        <li>About</li>
-        <li>Feature</li>
-        <li>Blog</li>
+        <button onClick={() => scrollToSection("hero")}>Home</button>
+        <button onClick={() => scrollToSection("feature")}>Feature</button>
+        <button onClick={() => scrollToSection("builder")}>About</button>
+        <button onClick={() => scrollToSection("blog")}>Blog</button>
       </ul>
       {isMobileMenuOpen && (
         <ul
-          className={`flex h-screen flex-col items-center fixed inset-0 bg-black bg-opacity-85 z-50 pt-20 md:hidden`}
+          className={`flex h-screen flex-col items-center fixed inset-0 bg-black bg-opacity-85 z-50 gap-8 pt-36 md:hidden`}
         >
           <li className="absolute top-5 right-5">
             <button
@@ -79,30 +86,30 @@ const Navbar = () => {
               <img className="w-10" src={close} alt="" />
             </button>
           </li>
-          <li
-            className="p-4 text-white"
-            onClick={() => setIsMobileMenuOpen(false)}
+          <button
+            className="p-4 text-white text-xl"
+            onClick={() => {setIsMobileMenuOpen(false); scrollToSection("hero")}}
           >
             Home
-          </li>
-          <li
-            className="p-4 text-white"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            About
-          </li>
-          <li
-            className="p-4 text-white"
-            onClick={() => setIsMobileMenuOpen(false)}
+          </button>
+          <button
+            className="p-4 text-white text-xl"
+            onClick={() => {setIsMobileMenuOpen(false); scrollToSection("feature")}}
           >
             Feature
-          </li>
-          <li
-            className="p-4 text-white"
-            onClick={() => setIsMobileMenuOpen(false)}
+          </button>
+          <button
+            className="p-4 text-white text-xl"
+            onClick={() => {setIsMobileMenuOpen(false); scrollToSection("builder")}}
+          >
+            About
+          </button>
+          <button
+            className="p-4 text-white text-xl"
+            onClick={() => {setIsMobileMenuOpen(false); scrollToSection("blog")}}
           >
             Blog
-          </li>
+          </button>
         </ul>
       )}
     </nav>

@@ -12,7 +12,7 @@ const Feature = () => {
           Powerful features to boost <br /> your productivity
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-6 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
         <div className="group flex flex-col hover:bg-[#F9F9F9] md:p-8 p-4 rounded-3xl hover:scale-105 transition duration-300 items-center">
           <img className="w-48 md:w-[22rem]" src={icon1} alt="" />
           <div className="flex flex-col text-center">

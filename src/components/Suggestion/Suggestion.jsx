@@ -11,7 +11,7 @@ const Suggestion = () => {
         Most popular articles
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
-        <div className="bg-white rounded-3xl p-6">
+        <div className="bg-white rounded-3xl p-4">
           <img className="mb-4 md:h-60 h-40 w-full" src={article1} alt="" />
           <div className="flex flex-col md:gap-4 gap-2">
             <h1 className="font-bold text-base md:text-xl">
@@ -33,7 +33,7 @@ const Suggestion = () => {
             <p className="text-[#5F6D7E] md:text-base text-xs">25 Apr</p>
           </div>
         </div>
-        <div className="bg-white rounded-3xl p-6">
+        <div className="bg-white rounded-3xl p-4">
           <img className="mb-4 md:h-60 h-40 w-full" src={article2} alt="" />
           <div className="flex flex-col md:gap-4 gap-2">
             <h1 className="font-bold text-base md:text-xl">
@@ -55,7 +55,7 @@ const Suggestion = () => {
             <p className="text-[#5F6D7E] md:text-base text-xs">25 Apr</p>
           </div>
         </div>
-        <div className="bg-white rounded-3xl p-6">
+        <div className="bg-white rounded-3xl p-4">
           <img className="mb-4 md:h-60 h-40 w-full" src={article3} alt="" />
           <div className="flex flex-col md:gap-4 gap-2">
             <h1 className="font-bold text-base md:text-xl">

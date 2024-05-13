@@ -4,7 +4,7 @@ import { homeImg } from "../../assets";
 const FreeTrial = () => {
   return (
     <div className="w-full flex flex-col md:flex-row rounded-3xl freeTrial-bg">
-      <div className="flex-1 flex flex-col items-center px-6 md:px-8 py-12 md:py-36">
+      <div className="flex-1 flex flex-col items-center px-6 md:px-8 py-8 md:py-28">
         <div className="flex flex-col md:gap-8 gap-4 my-auto text-white">
           <h1 className="text-3xl md:text-5xl font-bold">
             Start your free trial today
@@ -19,7 +19,7 @@ const FreeTrial = () => {
               type="text"
               placeholder="Your email here..."
             />
-            <button className="px-8 py-4 bg-[#fff] text-[#00ACFF] rounded-full font-bold">
+            <button className="px-8 py-4 bg-[#fff] text-[#00ACFF] rounded-full mr-auto font-bold">
               Get Started
             </button>
           </div>
